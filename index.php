@@ -1,6 +1,8 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
 
- echo "Hello world !";
+var_dump(\helpers\UUID::v7());
+
 
 
 ?>
