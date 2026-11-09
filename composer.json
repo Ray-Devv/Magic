@@ -3,9 +3,11 @@
         "twig/twig": "^3.27.1"
     },
     "autoload": {
-        "psr-4": { 
-            "helpers\\": ["helpers/"] 
-        }
+    "psr-4": {
+        "helpers\\": ["helpers/"],
+        "controllers\\": ["controllers/"]
     }
+}
+
 }
 

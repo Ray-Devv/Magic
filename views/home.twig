@@ -1,0 +1,10 @@
+{% extends "base.twig" %}
+
+{% block title %}Index{% endblock %}
+
+{% block maincontent %}
+    <h1>Collection de {{ username }}</h1>
+    <pre>
+        {{ dump(username) }}
+    </pre>
+{% endblock %}
