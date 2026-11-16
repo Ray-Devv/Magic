@@ -19,14 +19,6 @@ class ComposerStaticInit4cba3e39316efd34c266683c81c3d54f
     );
 
     public static $prefixLengthsPsr4 = array (
-        'h' =>
-        array (
-            'helpers\\' => 8,
-        ),
-        'c' =>
-        array (
-            'controllers\\' => 12,
-        ),
         'T' =>
         array (
             'Twig\\' => 5,
@@ -35,26 +27,36 @@ class ComposerStaticInit4cba3e39316efd34c266683c81c3d54f
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Services\\' => 9,
         ),
         'P' =>
         array (
             'PhpParser\\' => 10,
         ),
+        'M' =>
+        array (
+            'Models\\' => 7,
+        ),
+        'H' =>
+        array (
+            'Helpers\\' => 8,
+        ),
+        'E' =>
+        array (
+            'Exceptions\\' => 11,
+        ),
         'D' =>
         array (
             'DeepCopy\\' => 9,
         ),
+        'C' =>
+        array (
+            'Controllers\\' => 12,
+            'Config\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'helpers\\' =>
-        array (
-            0 => __DIR__ . '/../..' . '/helpers',
-        ),
-        'controllers\\' =>
-        array (
-            0 => __DIR__ . '/../..' . '/controllers',
-        ),
         'Twig\\' =>
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
@@ -67,13 +69,37 @@ class ComposerStaticInit4cba3e39316efd34c266683c81c3d54f
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Services\\' =>
+        array (
+            0 => __DIR__ . '/../..' . '/services',
+        ),
         'PhpParser\\' =>
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'Models\\' =>
+        array (
+            0 => __DIR__ . '/../..' . '/models',
+        ),
+        'Helpers\\' =>
+        array (
+            0 => __DIR__ . '/../..' . '/helpers',
+        ),
+        'Exceptions\\' =>
+        array (
+            0 => __DIR__ . '/../..' . '/exceptions',
+        ),
         'DeepCopy\\' =>
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Controllers\\' =>
+        array (
+            0 => __DIR__ . '/../..' . '/controllers',
+        ),
+        'Config\\' =>
+        array (
+            0 => __DIR__ . '/../..' . '/config',
         ),
     );
 

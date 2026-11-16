@@ -1,6 +1,6 @@
 <?php
 
-namespace helpers;
+namespace Helpers;
 
 /**
  * Represents a universally unique identifier (UUID), according to RFC 9562.

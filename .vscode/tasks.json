@@ -9,7 +9,7 @@
             "command": "start",
             "args": [
                 "msedge",
-                "http://grp-180.iq.iut21.u-bourgogne.fr/vscode/${relativeFileDirname}/${fileBasename}"
+                "http://grp-180.iq.iut21.u-bourgogne.fr/vscode/${workspaceFolderBasename}/${relativeFileDirname}/${fileBasename}"
             ],
             "group": {
                 "kind": "build",

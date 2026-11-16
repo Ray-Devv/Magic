@@ -1,7 +1,8 @@
 <?php
 
-namespace controllers;
+namespace Controllers;
 
+use Services\CardService;
 use Twig\Environment;
 
 class MainController {
@@ -12,8 +13,13 @@ class MainController {
     }
 
     public function index(): void {
+        $cardService = new CardService();
+        $cards = $cardService->getAllCards();
+
         echo $this->templates->render('home.twig', [
-            'username' => 'test user' 
+            'username' => 'test user',
+            'cards' => $cards
         ]);
     }
 }
+

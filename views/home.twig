@@ -4,7 +4,55 @@
 
 {% block maincontent %}
     <h1>Collection de {{ username }}</h1>
-    <pre>
-        {{ dump(username) }}
-    </pre>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Nom</th>
+                <th>Coût</th>
+                <th>Type</th>
+                <th>Texte</th>
+                <th>Rareté</th>
+                <th>Extension</th>
+                <th>Stats</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for card in cards %}
+                <tr>
+                    <td>
+                        <img src="{{ card.urlImg }}" alt="{{ card.name }}" width="80">
+                    </td>
+                    <td>{{ card.name }}</td>
+                    <td>{{ card.cost }}</td>
+                    <td>{{ card.types }}</td>
+                    <td>
+                        {{ card.textbox }}
+                        {% if card.flavortext %}
+                            <br><em>{{ card.flavortext }}</em>
+                        {% endif %}
+                    </td>
+                    <td>{{ card.rarity }}</td>
+                    <td>{{ card.extension }}</td>
+                    <td>
+                        {% if card.power is not null and card.toughness is not null %}
+                            {{ card.power }} / {{ card.toughness }}
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="index.php?action=edit-card&id={{ card.id }}">Modifier</a>
+                        <a href="index.php?action=del-card&id={{ card.id }}">Supprimer</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="9">Aucune carte dans la collection.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}
