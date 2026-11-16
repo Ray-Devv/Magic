@@ -16,4 +16,5 @@ CREATE TABLE CARD (
 
 -- TEST
 INSERT INTO CARD (id, name, cost, types, textbox, flavortext, extension, illustrator, rarity, url_img, power, toughness) VALUES
-('019334a0-0000-7000-8000-000000000001', 'Test', '{R}', 'A', 'A', 'A', 'A', 'A', 'Uncommon', 'test', NULL, NULL),
+('019334a0-0000-7000-8000-000000000001', 'Test', '{R}', 'A', 'A', 'A', 'A', 'A', 'Uncommon', 'test', NULL, NULL);
+
